@@ -3,17 +3,23 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(218, 216, 216);
-    background-color: black;
+    color: black;
+    background-color: rgb(140, 216, 235);
 }
 svg {
-    background-color: rgb(39, 39, 92);
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 50px black;
+}
+
+circle {
+    stroke: black;
+    border: 9px solid black;
+    opacity: 100px;
 }
 
 #tooltip {
-    color: black;
     position: absolute;
-    background-color: #fff;
     border: 1px solid #ccc;
     padding: 10px;
     font-family: Arial, sans-serif;
@@ -21,3 +27,14 @@ svg {
     pointer-events: none; /* Ensures tooltip does not interfere with mouse events on the chart */
     display: none; /* Initially hide the tooltip */
   }
+
+  .legend rect {
+    stroke: #000;
+  }
+  
+  .legend text {
+    fill: #000;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+  
